@@ -1,0 +1,306 @@
+body {
+    font-family: 'Poppins', sans-serif;;
+}
+.services, .clients, .blog {
+    background-color: #f7f7f7;
+}
+.services h3, .works h3, .clients h3, .blog h3, .contact h3 {
+    font-weight: 900;
+    font-size: 40px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+/*navbar*/
+.navbar-nav li a {
+    font-size: 14px;
+    color: #111;
+}
+.navbar-brand {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1.6 px;
+    color: #1c1c1c;
+}
+/*end navbar*/
+
+/*header*/
+header {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+header .layer {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.headerContent h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+.headerContent p {
+    font-size: 30px;
+    font-weight: 200;
+}
+.headerContent .icon {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+} 
+/*end header*/
+
+/*about section*/
+.about .cont h3 {
+    font-weight: 800;
+}
+.about .cont .fp {
+    color: #999;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.cont .sb {
+    color: #748182;
+    font-size: 15px;
+}
+.sb span {
+    font-weight: 700;
+}
+.prog {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.prog .bg {
+    background-color: black;
+    font-size: 13px;
+    color: white;
+}
+.prog .one {
+    width: 95%;
+}
+.prog .two {
+    width: 80%;
+}
+.prog .three {
+    width: 90%;
+}
+.btn-dark {
+    background-color: #1c1c1c;
+    color: white;
+    font-size: 13px;
+}
+.btn-outline-dark {
+    color: #1c1c1c;
+    font-size: 13px;
+}
+.btn-dark:hover {
+    background-color: white;
+    color: #1c1c1c;
+}
+.btn-outline-dark:hover {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+@media screen and (max-width: 992px) {
+    .about .cont {
+        padding-top: 50px;
+    }
+    .about .container {
+        width: 100%;
+    }
+}
+/*end about*/
+
+/*services section*/
+.card .icon {
+    width: 60px;
+    height: 60px;
+    background-color: #f4f4f4;
+}
+.card .icon i {
+    color: #1c1c1c;
+    font-size: 25px;
+}
+.card h6 {
+    font-weight: 800;
+    font-size: 18px;
+}
+.card p {
+    color: #748182;
+    font-size: 14px;
+}
+.services .card:hover .icon {
+    background-color: #1c1c1c;
+}
+.services .card:hover .icon i {
+    color: #f4f4f4;
+}
+/*end services*/
+
+/*works section*/
+.nav-pills .nav-item .nav-link {
+    color: #222;
+    font-size: 16px;
+    font-weight: 700;
+}
+.nav-pills .nav-item .nav-link.active{
+    color: #222;
+    background-color: transparent;
+}
+.works .rel {
+    position: relative;
+}
+.rel .hover {
+    position: absolute;
+    top: 5;
+    left: 20;
+    bottom: 5;
+    right: 20;
+    z-index: 2;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    transition: opacity 1s;
+}
+.hover a {
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+}
+.hover p {
+    font-size: 14px;
+    letter-spacing: 1.6px;
+}
+.hover:hover {
+    opacity: 1;
+}
+/*end works*/
+
+/*clients section*/
+.carousel-item img {
+    width: 100px;
+}
+.carousel-inner .carousel-item .content h6 {
+    color: #1c1c1c;
+    font-size: 16px;
+    font-weight: 600
+}
+.carousel-item .content .env {
+    font-size: 12px;
+}
+.carousel-item .content p {
+    color: #748182;
+}
+.carousel {
+    padding-bottom: 60px;
+}
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    background-color: #869791;
+}
+.targets .items .item span {
+    font-size: 30px;
+}
+.targets .items .item h3 {
+    font-weight: 900;
+    font-size: 30px;
+}
+.targets .items .item p {
+    color: #748182;
+    font-weight: 600;
+}
+@media screen and (max-width: 992px) {
+    .targets .items .item {
+        padding-top: 20px;
+    }
+}
+/*end clients*/
+
+/*blog section*/
+.blog .items p {
+    color: #888;
+    font-size: 14px;
+    font-weight: 600;
+}
+.blog .items h4 {
+    font-size: 20px;
+    font-weight: 800;
+}
+.blog .items a {
+    color: #1c1c1c;
+}
+.blog .pic {
+    transition: transform 0.5s;
+}
+.wid {
+    width: 31.5%;
+} 
+.blog .pic:hover {
+    transform: scale(1.1, 1.1);
+}
+.blog .items a:hover {
+    text-decoration: none;
+}
+.blog .items .bor-bot {
+    border-bottom: 2px solid #333;
+}
+@media screen and (max-width: 992px) {
+    .wid {
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+/*end blog*/
+
+/*contact section*/
+.contact .container {
+    width: 75%;
+}
+.contact .icon {
+    background-color: #f4f4f4;
+    width: 55px;
+    height: 55px;
+    font-size: 20px;
+}
+.rotate {
+    transform: rotate(90deg);
+}
+.contact .items .item p {
+    color: rgb(116, 129, 130);
+    font-size: 15px;
+}
+.contact .icon:hover {
+    background-color: black;
+    color: #f4f4f4;
+}
+.form-row input, .form-group textarea {
+    background-color: #f4f4f4;
+}
+form .btn-dark {
+    padding: 10px 40px;
+}
+form .btn-dark:hover {
+    background-color: white;
+    color: black;
+}
+@media screen and (max-width: 992px) {
+    .contact .item {
+        padding-top: 20px;
+    }
+    form input {
+        margin-top: 15px;
+    }
+}
+/*footer*/
+footer {
+    background-color: #1c1c1c;
+    padding: 30px 0px;
+}
+footer p {
+    font-size: 13px;
+    word-spacing: 2px;
+    color: #748182;
+}
+/*end footer*/
+/*end contact*/
